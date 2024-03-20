@@ -72,11 +72,12 @@
           const canvas = document.createElement("canvas");
           canvas.id = `chart-${cityName}`;
           canvas.classList.add("chart-canvas");
-          canvas.style.backgroundImage = `url(${photoUrl})`;
+          chartContainer.style.backgroundImage = `url(${photoUrl})`;
           chartContainer.appendChild(canvas);
 
           const ctx = canvas.getContext("2d");
-          
+          Chart.defaults.font.weight = 'bold';
+          Chart.defaults.font.size = '20px';
           new Chart(ctx, {
             type: "bar",
             data: {
@@ -86,20 +87,20 @@
                     label: `${formattedDate}, ${capitalizedCityName} Temperature`,
                   data: temperatures,
                   backgroundColor: [
-                    "rgba(255, 99, 132, 0.2)",
-                    "rgba(54, 162, 235, 0.2)",
-                    "rgba(255, 206, 86, 0.2)",
-                    "rgba(75, 192, 192, 0.2)",
-                    "rgba(153, 102, 255, 0.2)",
+                    "rgba(255, 99, 132, 0.7)",
+                    "rgba(54, 162, 235, 0.7)",
+                    "rgba(255, 206, 86, 0.7)",
+                    "rgba(75, 192, 192, 0.7)",
+                    "rgba(153, 102, 255, 0.7)",
                   ],
                   borderWidth: 1,
                   borderColor: "black",
                   hoverBackgroundColor: [
-                    "rgba(255, 99, 132, 0.4)",
-                    "rgba(54, 162, 235, 0.4)",
-                    "rgba(255, 206, 86, 0.4)",
-                    "rgba(75, 192, 192, 0.4)",
-                    "rgba(153, 102, 255, 0.4)",
+                    "rgba(255, 99, 132, 0.7)",
+                    "rgba(54, 162, 235, 0.7)",
+                    "rgba(255, 206, 86, 0.7)",
+                    "rgba(75, 192, 192, 0.7)",
+                    "rgba(153, 102, 255, 0.7)",
                   ],
                   
                   hoverBorderWidth: 4,
@@ -114,7 +115,7 @@
                 color: 'black'
                 },
                 ticks: {
-                  color: 'blue', // Change the color of the labels here
+                  color: 'white', // Change the color of the labels here
                 },
               },
               x: {
@@ -122,7 +123,7 @@
                 color: 'black'
                 },
                 ticks: {
-                  color: 'red', // Change the color of the labels here
+                  color: 'white', // Change the color of the labels here
                 },
               },
               },
