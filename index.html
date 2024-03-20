@@ -72,12 +72,12 @@
           const canvas = document.createElement("canvas");
           canvas.id = `chart-${cityName}`;
           canvas.classList.add("chart-canvas");
-          chartContainer.style.backgroundImage = `url(${photoUrl})`;
+          canvas.style.backgroundImage = `url(${photoUrl})`;
           chartContainer.appendChild(canvas);
 
           const ctx = canvas.getContext("2d");
-          Chart.defaults.font.weight = 'bold';
-          Chart.defaults.font.size = '20px';
+          Chart.defaults.font.weight = 500;
+          Chart.defaults.font.size = '12px';
           Chart.defaults.opacity = 0.5;
           new Chart(ctx, {
             type: "bar",
@@ -88,20 +88,20 @@
                     label: `${formattedDate}, ${capitalizedCityName} Temperature`,
                   data: temperatures,
                   backgroundColor: [
-                    "rgba(255, 99, 132, 0.7)",
-                    "rgba(54, 162, 235, 0.7)",
-                    "rgba(255, 206, 86, 0.7)",
-                    "rgba(75, 192, 192, 0.7)",
-                    "rgba(153, 102, 255, 0.7)",
+                    "rgba(255, 99, 132, 0.8)",
+                    "rgba(54, 162, 235, 0.8)",
+                    "rgba(255, 206, 86, 0.8)",
+                    "rgba(75, 192, 192, 0.8)",
+                    "rgba(153, 102, 255, 0.8)",
                   ],
                   borderWidth: 1,
                   borderColor: "black",
                   hoverBackgroundColor: [
-                    "rgba(255, 99, 132, 0.7)",
-                    "rgba(54, 162, 235, 0.7)",
-                    "rgba(255, 206, 86, 0.7)",
-                    "rgba(75, 192, 192, 0.7)",
-                    "rgba(153, 102, 255, 0.7)",
+                    "rgba(255, 99, 132, 0.9)",
+                    "rgba(54, 162, 235, 0.9)",
+                    "rgba(255, 206, 86, 0.9)",
+                    "rgba(75, 192, 192, 0.9)",
+                    "rgba(153, 102, 255, 0.9)",
                   ],
                   
                   hoverBorderWidth: 4,
@@ -109,6 +109,14 @@
               ],
             },
             options: {
+              plugins: {
+              tooltips: {
+             enabled: true
+            },
+            legend:{
+
+            }
+          },
               scales: {
                 y: {
                 beginAtZero: true,
@@ -116,21 +124,21 @@
                 color: 'black'
                 },
                 ticks: {
-                  color: 'white', // Change the color of the labels here
+                  color: 'white',
+                 
                 },
               },
               x: {
                 grid: {
-                color: 'black'
+                color: 'black',
+                
                 },
                 ticks: {
-                  color: 'white', // Change the color of the labels here
+                  color: 'white',
                 },
               },
               },
-              tooltips: {
-                enabled : true,
-            }
+              
             },
           });
 
