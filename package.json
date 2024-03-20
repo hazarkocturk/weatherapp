@@ -1,0 +1,22 @@
+{
+  "name": "17-dom-manipulation-fetch-advanced-hazarkocturk",
+  "version": "1.0.0",
+  "description": "[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/VkWaI8IB) # The Weather Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Junior-dev-Track/17-dom-manipulation-fetch-advanced-hazarkocturk.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Junior-dev-Track/17-dom-manipulation-fetch-advanced-hazarkocturk/issues"
+  },
+  "homepage": "https://github.com/Junior-dev-Track/17-dom-manipulation-fetch-advanced-hazarkocturk#readme",
+  "dependencies": {
+    "chart.js": "^4.4.2"
+  }
+}
