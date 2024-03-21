@@ -11,6 +11,7 @@ body{
   justify-content: center;
   background-image: url(./gorgeous-clouds-background-with-blue-sky-design_1017-25501.avif);
   background-size: cover;
+  background-repeat: no-repeat;
   font-family: "Tahoma", "Helvetica Neue",;
 }
 
