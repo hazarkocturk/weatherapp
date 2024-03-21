@@ -6,28 +6,31 @@
 }
 
 body{
-display: flex;
-flex-direction: column;
-align-items: center;
-background-image: url(./gorgeous-clouds-background-with-blue-sky-design_1017-25501.avif);
-background-size: cover;
-background-repeat: no-repeat;
-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(./gorgeous-clouds-background-with-blue-sky-design_1017-25501.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 .container{
-  margin-top: 50px;  
-  display: flex;  
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 95%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 95%;
+    align-items: center;
 }
 
 .chart-container {
   margin-top: 20px;
   position: relative;
   width: 90%;
+  max-height: 35vh;
+  display: flex;
+  justify-content: center;
   
 }
 
