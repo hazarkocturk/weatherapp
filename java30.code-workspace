@@ -1,0 +1,13 @@
+{
+    "folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../becode-code/17-dom-manipulation-fetch-advanced-hazarkocturk"
+		}
+	],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "17-dom-manipulation-fetch-advanced-hazarkocturk"
+    }
+}

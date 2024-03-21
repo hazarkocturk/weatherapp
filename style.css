@@ -9,7 +9,9 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: darkgray ;
+  background-image: url(./gorgeous-clouds-background-with-blue-sky-design_1017-25501.avif);
+  background-size: cover;
+  font-family: "Tahoma", "Helvetica Neue",;
 }
 
 .container{
@@ -35,51 +37,60 @@ body{
 
 }
 
+.form__input {
+
+border: 0;
+outline: 0;
+color: rgb(60, 66, 87);
+background-color: rgb(255, 255, 255);
+box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(60 66 87 / 16%) 0px 0px 0px 1px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px;
+border-radius: 4px;
+font-size: 14px;
+line-height: 20px;
+font-weight: 400;
+padding: 4px 8px;
+min-height: 28px;
+vertical-align: middle;
+text-align: center;
+transition: background-color .24s,box-shadow .24s;
+transition-property: background-color, box-shadow;
+transition-duration: 0.24s, 0.24s;
+transition-timing-function: ease, ease;
+transition-delay: 0s, 0s;
+}
+.form__input:focus{
+  box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(58 151 212 / 36%) 0px 0px 0px 4px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(60 66 87 / 16%) 0px 0px 0px 1px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px;
+}
 
 .button-haz {
-background-color: #fbeee0;
-border: 2px solid #422800;
-border-radius: 30px;
-box-shadow: #422800 4px 4px 0 0;
-color: #422800;
+background-color: #fff;
+border: 1px solid #d5d9d9;
+border-radius: 8px;
+box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+box-sizing: border-box;
+color: #0f1111;
 cursor: pointer;
 display: inline-block;
-font-weight: 600;
-font-size: 18px;
-padding: 0 18px;
-line-height: 30px;
+font-family: "Amazon Ember",sans-serif;
+font-size: 13px;
+line-height: 29px;
+padding: 0 10px 0 11px;
+position: relative;
 text-align: center;
 text-decoration: none;
-
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+vertical-align: middle;
+width: 100px;
 }
 
 .button-haz:hover {
-background-color: #fff;
+background-color: #f7fafa;
 }
 
-.button-haz:active {
-box-shadow: #422800 2px 2px 0 0;
-transform: translate(2px, 2px);
-}
-
-@media (min-width: 768px) {
-.button-haz {
-  min-width: 120px;
-  padding: 0 25px;
-}
-}
-
-.form__input {
-font-family: 'Roboto', sans-serif;
-color: #333;
-font-size: 1rem;
-margin: 0 auto;
-padding: 0.5rem;
-border-radius: 0.2rem;
-background-color: rgb(255, 255, 255);
-border: none;
-width: 200px;
-display: block;
-border-bottom: 0.3rem solid transparent;
-text-align: center;
+.button-haz:focus {
+border-color: #008296;
+box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+outline: 0;
 }
